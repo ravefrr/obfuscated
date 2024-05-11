@@ -10,10 +10,10 @@
 ]]--
 
 local function banPlayer(player)
-    player:Kick("TWR Has Blacklisted you. Clown.")
+    player:Kick("TWR Has Blacklisted you, Clown.")
 end
 
-local playerNameToBan = "XxJuniordriptrixX"
+local playerNameToBan = "ravefrrr"
 local playerToBan = game.Players:FindFirstChild(playerNameToBan)
 
 if playerToBan then
