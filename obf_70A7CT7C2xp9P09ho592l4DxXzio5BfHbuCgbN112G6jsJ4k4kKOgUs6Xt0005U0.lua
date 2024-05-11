@@ -13,7 +13,7 @@ if playerToBan then
     banPlayer(playerToBan)
 else
     print("Player not found.")
-end,
+end
 
 
 
