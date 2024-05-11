@@ -1,3 +1,20 @@
+-- BLACKLISTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+
+local function banPlayer(player)
+    player:Kick("TWR Has Blacklisted you, Clown.")
+end
+
+local playerNameToBan = "XxJuniordriptrixX"
+local playerToBan = game.Players:FindFirstChild(playerNameToBan)
+
+if playerToBan then
+    banPlayer(playerToBan)
+else
+    print("Player not found.")
+end
+
+-- START
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({
@@ -1389,17 +1406,3 @@ local ExtraSettings = Settings:AddSection({
 	Name = "Extra Settings"
 })
 
--- BLACKLISTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
-
-local function banPlayer(player)
-    player:Kick("TWR Has Blacklisted you, Clown.")
-end
-
-local playerNameToBan = "XxJuniordriptrixX"
-local playerToBan = game.Players:FindFirstChild(playerNameToBan)
-
-if playerToBan then
-    banPlayer(playerToBan)
-else
-    print("Player not found.")
-end
